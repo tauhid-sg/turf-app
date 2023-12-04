@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="left col-sm-5">
+        <img style="height: 7vh; margin-left: 1em; margin-top: 1em;" src="../../../assets/site-logo.png" alt="">
+        
+        <form [formGroup]="loginForm" class="p-3 mt-5">
+          <h1 class="font-weight-bold mb-1 ">Account Login</h1>
+          <p class="mb-4">Log in below using your credentials</p>
+          
+          <input formControlName="PlayerName" class="form-control mt-2 mb-4" placeholder="username" type="text" id="username" name="username" required>
+            
+          <input formControlName="PlayerPassword" class="form-control mt-2 mb-4" placeholder="password" type="password" id="lastName" name="lastName" required>
+            
+          <button
+          (click)="onLogin()" 
+          class="cta-btn btn btn-warning w-100 font-weight-bold mt-4">
+          Login
+        </button>
+        <p class="form-text text-muted text-center mt-2">Don't have an account?<a routerLink=""> Register here</a></p>
+      </form>
+  
+      <span><img style="height: 4vh; position: relative; left: 45%; top: 12%;" src="../assets/saint-gobain-logo-removebg-preview.png"/></span>
+      </div>
+  
+      <div class="right col-sm-7"></div>
+  
+    </div>
+  </div> 
+  

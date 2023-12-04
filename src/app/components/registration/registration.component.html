@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="left col-sm">
+        <!-- <img class="mb-3" style="height: 7vh; padding-left: 1em;" src="../assets/angular-logo.png" alt=""> -->
+        <div class="bg"></div>
+    </div>
+  
+      <div class="right col-sm">
+        <form [formGroup]="registerForm" class="p-3">
+            <h3 class="font-weight-bold mb-4">Let's get started</h3>
+
+            <!-- FULL NAME -->
+            <input type="text" formControlName="PlayerName" class="form-control mt-2 mb-4" id="fulllname" name="fullname" placeholder="Full Name" required>
+            <!-- <div *ngIf="registerForm.get('fullname')?.invalid 
+            && (registerForm.get('fullname')?.dirty 
+            || registerForm.get('fullname')?.touched)" 
+            class="error-msg">
+              <span *ngIf="registerForm.get('fullname')?.errors['required']">First name is required</span>
+              <span *ngIf="registerForm.get('fullname')?.errors['minlength']">Minimum 4 characters are required.</span>
+            </div> -->
+
+            <input type="text" formControlName="PlayerEmail" class="form-control mt-2 mb-4" id="email" name="email" placeholder="Email" required>
+            <!-- <div *ngIf="registerForm.get('email')?.invalid 
+            && (registerForm.get('email')?.dirty 
+            || registerForm.get('email')?.touched)" 
+            class="error-msg">
+              <span *ngIf="registerForm.get('email')?.errors['required']">emailis required</span>
+              <span *ngIf="registerForm.get('email')?.errors['email']">invalid email pattern</span>
+            </div> -->
+
+            <input type="tel" formControlName="PlayerPhoneNumber" class="form-control mt-2 mb-4" name="phone" id="phone" placeholder="Phone Number" required>
+
+            <input type="password" formControlName="PlayerPassword" class="form-control mt-2 mb-4" id="password" name="password" placeholder="Password" required>
+            <!-- <div *ngIf="registerForm.get('password')?.invalid 
+            && (registerForm.get('password')?.dirty 
+            || registerForm.get('password')?.touched)" 
+            class="error-msg">
+              <span *ngIf="registerForm.get('password')?.errors['required']">password is required</span>
+              <span *ngIf="registerForm.get('password')?.errors['minlength']">Minimum 4 characters are required.</span>
+              <span *ngIf="registerForm.get('password')?.errors['maxlength']">Maximum 10 characters are required.</span>
+            </div> -->
+
+            <!-- <input type="password" formControlName="repassword" class="form-control mt-2" id="repassword" name="repassword" placeholder="Re-enter Password" [(ngModel)]="repassword" required> -->
+            <!-- <small id="emailHelp" class="form-text text-muted">Forgot password ?</small> -->
+            
+            <!-- [disabled]="registerForm.invalid"  -->
+            <button
+            type="submit"
+            (click)="onRegister()"
+            class="cta-btn btn btn-warning w-100 font-weight-bold mt-5">
+            Click here to register
+            </button>
+          <p class="form-text text-muted text-center mt-2">Already have an account?<a routerLink="../login"> Login here</a></p>
+        </form>
+</div>
+  
+    </div>
+  </div> 
+  

@@ -1,0 +1,46 @@
+<!-- <div class="container my-3">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">FullName</th>
+        <th scope="col">Email</th>
+        <th scope="col">PhoneNo</th>
+        <th scope="col">PlayTime</th>
+        <th scope="col">PlayDate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of turfDetails">
+        <td>{{ data.fullName }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.phoneNo }}</td>
+        <td>{{ data.playTime }}</td>
+        <td>{{ data.playDate }}</td>
+        <td>
+          <button 
+          class="btn btn-outline-danger" 
+          (click)="deleteTurf(data.turfID)">Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
+
+<div class="container">
+  <div class="row m-5">
+    <div class="col-sm-4 card" *ngFor="let data of turfDetails">
+      <h3>{{ data.fullName }}</h3>
+      <div>
+        <p>{{ data.email }}</p>
+        <p>{{ data.phoneNo }}</p>
+      </div>
+      <div>
+        <p>{{ data.playTime }}</p>
+        <p>{{ data.playDate }}</p>
+      </div>
+      <button 
+        class="btn btn-outline-danger" 
+        (click)="deleteTurf(data.turfID)">Cancel</button>
+    </div>
+  </div>
+</div>

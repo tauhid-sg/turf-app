@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+	font-family: 'Inter';
+    overflow: hidden;
+}
+
+.error-msg {
+    color: red;
+    position: relative;
+    bottom: 18px;
+}
+
+form {
+    position: relative;
+    top: 3%;
+    left: 10%;
+    /* border: 1px solid #bbb */
+	max-width: 500px;
+}
+
+form h1 {
+    font-size: 2em;
+}
+
+input {
+    padding: .50em;
+}
+
+input::after {
+    content: "lendi";
+}
+
+.cta-btn {
+    padding: 1em;
+	background: #54A472;
+    border: none;
+    outline: none;
+    border-radius: .3em;
+	color: white;
+    transition: .2s all ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #3a3a3a;
+}
+
+.cta-btn:focus, .cta-btn:active {
+    background: #262626;
+    color: #fcfcfc;
+}
+
+.bg {
+	height: 100vh;
+    width: 100%;
+	/* background-image: url('../../../assets/cta-image-blue.png'); */
+	background-image: url('../../../assets/register-image.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+    /* position: relative;
+    top: 3%;
+    left: 15%; */
+}
+
+@media (max-width: 767px) { 
+    .left {
+        display: none;
+    }
+    form {
+        width: 800px;
+    }
+}

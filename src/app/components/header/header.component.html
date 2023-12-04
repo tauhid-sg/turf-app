@@ -1,0 +1,35 @@
+<!-- HEADER COMPONENT -->
+<!-- INSERT THIS IS ANOTHER FILE -->
+<header *ngIf="shouldShowHeader()">
+<nav class="navbar navbar-expand-lg navbar-light p-2">
+  <a class="navbar-brand" routerLink="../home">
+    <img src="../../../assets/site-logo.png" style="height: 8vh;" class="d-inline-block align-top" alt="">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <!-- justify-content-end d-flex gap-3 -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto pr-3">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="../explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="../products">Venues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="../contact">Booking
+              <span *ngIf="newEntryCount > 0" class="badge bg-danger">{{ newEntryCount }}</span>
+            </a>
+          </li>
+        </ul>
+        <a routerLink="../profile">
+          <button class="btn btn-dark"
+          style="background: #54A472; border: none;">Book Now
+          </button>
+      </a>
+    </div>  
+    
+</nav>
+</header>

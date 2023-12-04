@@ -1,0 +1,99 @@
+.gradient-custom {
+    
+    /* Chrome 10-25, Safari 5.1-6 
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+*/
+background: #232323;    
+}
+
+input[type="date"] {
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */  
+    /* background-image: url('https://cdn-icons-png.flaticon.com/512/4389/4389656.png'); */
+    /* background-image: url('https://cdn-icons-png.flaticon.com/512/591/591576.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 76px;
+}
+
+input[type="time"] {
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */ 
+    /* background-image: url('https://cdn-icons-png.flaticon.com/512/4389/4389656.png'); */
+    /* background-image: url('https://cdn-icons-png.flaticon.com/512/850/850960.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 76px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background-image: url('https://cdn-icons-png.flaticon.com/512/4389/4389656.png'); */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/889/889536.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 76px;
+  }
+  
+  select:hover,
+  select:focus {
+    border-color: #999;
+  }
+  
+  select option {
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  select option:hover,
+  select option:focus {
+    background-color: #ccc;
+    color: #fff;
+  }
+
+  .confetti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+  }
+  
+  .confetti-piece {
+    width: 10px;
+    height: 10px;
+    background-color: #ffbf00;
+    border-radius: 50%;
+    margin: 5px;
+    transform: rotateZ(45deg);
+    animation: confetti-fall 2s ease-in-out infinite;
+  }
+  
+  @keyframes confetti-fall {
+    0% {
+      transform: rotateZ(5deg) translateY(-80%);
+    }
+    100% {
+      transform: rotateZ(-45deg) translateY(100vh);
+    }
+  }
+  

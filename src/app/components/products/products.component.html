@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+      <div *ngFor="let venue of venueDetails" class="col-md-4 my-5 mb-4">
+          <div class="card" style="border: none;">
+            <img style="height: 50vh;" class="card-img-top" src="../../../assets/{{venue.venueImage}}" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-text">{{ venue.venueName }}</h3>
+              <div class="d-flex justify-content-between">
+                <p class="card-text">Location: {{ venue.venueLocation }}</p>
+                <p class="badge bg-danger p-2">{{ venue.venueRating }}</p>
+              </div>
+              <div class="d-flex justify-content-start gap-3">
+                <p class="card-text">&#x20b9; {{ venue.venuePrice }}</p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </div> 
+</div> 

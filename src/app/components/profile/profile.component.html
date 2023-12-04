@@ -1,0 +1,66 @@
+<div class="container mt-4">
+  <form (ngSubmit)="submitForm()">
+    <div class="col-sm-6">
+      <input class="form-control mb-3" type="text" name="fullName" id="" [(ngModel)]="fullName" placeholder="Enter Name">
+    </div>
+    <div class="col-sm-6">
+      <input class="form-control mb-3" type="text" name="email" id="" [(ngModel)]="email" placeholder="Enter Email">
+    </div>
+
+    <div class="col-sm-6">
+      <input class="form-control mb-3" type="tel" name="phoneNo" id="" [(ngModel)]="phoneNo" placeholder="Enter Phone">
+    </div>
+
+    <div class="col-sm-6">
+      <input class="form-control mb-3" type="time"  name="playTime" id="" [(ngModel)]="playTime" placeholder="Enter Date">
+    </div>
+    <div class="col-sm-6">
+      <input class="form-control mb-3" type="date"  name="playDate" id="" [(ngModel)]="playDate" placeholder="Enter Date">
+    </div>
+    
+    <!-- <div class="col-sm-6">
+      <div class="custom-select">
+        <select class="form-select" [(ngModel)]="selectedTurf" name="selectedTurf">
+          <option value="0">Select a turf:</option>
+          <option value="Players Turf">Players Turf - &#8377; 1500</option>
+          <option value="Goregaon Sports Club">Goregaon Sports Club - &#8377;2000</option>
+          <option value="Andheri Complex">Andheri Complex - &#8377;2500</option>
+          <option value="GoalStrek">GoalStrek - &#8377;1800</option>
+          <option value="Trickshot">Trickshot - &#8377;1000</option>
+          <option value="BandraSlayer">BandraSlayer - &#8377;200</option>
+        </select>
+      </div>
+    </div> -->
+   
+  <button 
+  class="btn btn-success mt-5" 
+  type="submit"
+  >
+  Book Now</button>
+</form>
+
+<!--<app-contact [turfDetails]="turfDetails"></app-contact>-->
+
+ <!-- <div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="text-center">Turf Booked Successfully 🎉</h4>
+      </div>
+      <div class="modal-body">
+        <p>Name: {{ name}}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Turf: {{ selectedTurf }}</p>
+      </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="closePopup()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  -->
+</div>

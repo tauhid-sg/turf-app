@@ -1,0 +1,10 @@
+*, body {
+    overflow: hidden;
+}
+.home-img {
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+    height: 55vh;
+    z-index: -1;
+}
